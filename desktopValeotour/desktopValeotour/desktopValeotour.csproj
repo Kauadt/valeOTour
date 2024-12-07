@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4FF956A5-B680-40B8-AB61-DE5AAAFE5AD7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>desktopValeotour</RootNamespace>
+    <AssemblyName>desktopValeotour</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.5.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="conexao.cs" />
+    <Compile Include="frm_erroGuia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_erroGuia.Designer.cs">
+      <DependentUpon>frm_erroGuia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_erroLocal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_erroLocal.Designer.cs">
+      <DependentUpon>frm_erroLocal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_login.Designer.cs">
+      <DependentUpon>frm_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_principal.Designer.cs">
+      <DependentUpon>frm_principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_splash.Designer.cs">
+      <DependentUpon>frm_splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_verificacaoGuiaDadosGerais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_verificacaoGuiaDadosGerais.Designer.cs">
+      <DependentUpon>frm_verificacaoGuiaDadosGerais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_verificacaoGuiaFotos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_verificacaoGuiaFotos.Designer.cs">
+      <DependentUpon>frm_verificacaoGuiaFotos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_verificacaoLocalAdicionais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_verificacaoLocalAdicionais.Designer.cs">
+      <DependentUpon>frm_verificacaoLocalAdicionais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_verificacaoLocalDadosGerais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_verificacaoLocalDadosGerais.Designer.cs">
+      <DependentUpon>frm_verificacaoLocalDadosGerais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_verificacaoLocalFotos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_verificacaoLocalFotos.Designer.cs">
+      <DependentUpon>frm_verificacaoLocalFotos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="guias.cs" />
+    <Compile Include="locais.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frm_erroGuia.resx">
+      <DependentUpon>frm_erroGuia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_erroLocal.resx">
+      <DependentUpon>frm_erroLocal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_login.resx">
+      <DependentUpon>frm_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_principal.resx">
+      <DependentUpon>frm_principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_splash.resx">
+      <DependentUpon>frm_splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_verificacaoGuiaDadosGerais.resx">
+      <DependentUpon>frm_verificacaoGuiaDadosGerais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_verificacaoGuiaFotos.resx">
+      <DependentUpon>frm_verificacaoGuiaFotos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_verificacaoLocalAdicionais.resx">
+      <DependentUpon>frm_verificacaoLocalAdicionais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_verificacaoLocalDadosGerais.resx">
+      <DependentUpon>frm_verificacaoLocalDadosGerais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_verificacaoLocalFotos.resx">
+      <DependentUpon>frm_verificacaoLocalFotos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rolling%401x-1.0s-200px-200px.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rolling%401x-1.0s-200px-200px %281%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rolling%401x-1.0s-200px-200px1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rolling%401x-1.0s-200px-200px %281%291.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Frame 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sign In.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle 111.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ValeOTour!.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle 111 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vector.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mingcute_check-fill %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_dadosGerais.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dados Gerais.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dados Gerais %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-forward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fotos Cadastur.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_fotos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_fotos %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Erro no Cadastro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_erro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ValeOTour!1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ValeOTour! %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adicionais.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_adicionais.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fotos Secundárias.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

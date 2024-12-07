@@ -1,0 +1,1 @@
+Para que os sistemas integrados funcionem corretamente, a pasta valeOTour acima deve ser inserida no htdocs.
