@@ -49,7 +49,7 @@ Facilitar o acesso de turistas a pontos turísticos, conectando-os com guias loc
 
 1. Instale Node.js e Expo CLI.
 2. Acesse a pasta do app mobile.
-3. Rode `npm install` e depois `npx expo start`.
+3. Rode `npm install` e depois `npm start`.
 
 ### 💻 Desktop
 
