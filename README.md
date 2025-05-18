@@ -42,7 +42,7 @@ Facilitar o acesso de turistas a pontos turísticos, conectando-os com guias loc
 
 1. Importe o banco de dados MySQL (veja detalhes no PDF).
 2. Configure `conexao.php` com suas credenciais.
-3. Coloque a pasta `API/` em um servidor local (XAMPP/WAMP/etc.).
+3. Coloque a pasta `ValeOTour/` que está dentro diretório `API/` em um servidor local (XAMPP/WAMP/etc.).
 4. Acesse via `http://localhost/API/valeOTour/`.
 
 ### 📱 Mobile
